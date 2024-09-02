@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 30p;
+}
+
+.form-signin {
+    max-width: 90%;
+    width: 600px; /* Increased width */
+    padding: 30px; /* Adjusted padding */
+    margin: auto;
+    background-color: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+.form-control{
+    background-color: none;
+
+
+}
+
+.form-signin img {
+    margin-bottom: 20px;
+    background-color: none;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+    margin-bottom: 15px;
+    background-color: none; /* Increased margin for better spacing */
+}
+.container {
+    position: relative; /* Position relative for stacking context */
+    max-width: 1000px;
+    margin: 50px auto; /* Retain existing margin if needed */
+    width: 800px;
+    height: 200px;
+    background-color: transparent; /* Semi-transparent white background for contrast */
+    padding: 20px; /* Add padding for content */
+    border-radius: 10px; /* Optional: rounded corners for the container */
+    text-align: center; /* Center-align text and image */
+    z-index: 1; /* Ensure content is above the background image */
+    top: 130px; /* Move container down by 100px */
+}
+
+
+@media (max-width: 600px) {
+    .form-signin {
+        width: 80%; /* Adjust width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .form-signin {
+        width: 95%; /* Full width for very small screens */
+        padding: 15px; /* Adjust padding for very small screens */
+    }
+}
